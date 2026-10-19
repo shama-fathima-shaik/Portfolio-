@@ -65,6 +65,41 @@ a {
   text-decoration: none;
 }
 
+/* PROJECTS & LEADERSHIP CARDS */
+.project-card {
+  background: white;
+  border-left: 4px solid #e94560;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.project-meta {
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin: 15px 0;
+  display: block;
+}
+
+.tags span {
+  display: inline-block;
+  background: #1a1a2e;
+  color: white;
+  padding: 5px 12px;
+  margin: 3px 3px 3px 0;
+  border-radius: 20px;
+  font-size: 0.8em;
+}
+
+/* CONTACT */
 #contact {
   text-align: center;
   background: #1a1a2e;
