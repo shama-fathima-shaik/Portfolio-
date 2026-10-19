@@ -8,6 +8,7 @@
 body {
   background-color: #f9f9f9;
   color: #333;
+  line-height: 1.5;
 }
 
 section {
@@ -15,11 +16,12 @@ section {
   border-bottom: 1px solid #eee;
 }
 
+/* HOME */
 #home {
   background: linear-gradient(135deg, #1a1a2e, #16213e);
   color: white;
   text-align: center;
-  padding: 100px 30px;
+  padding: 100px 30px 60px;
 }
 
 #home h1 {
@@ -32,6 +34,34 @@ section {
   opacity: 0.85;
 }
 
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(233, 69, 96, 0.5);
+  border-radius: 12px;
+  padding: 15px 25px;
+  min-width: 130px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 2em;
+  color: #e94560;
+}
+
+.stat span {
+  font-size: 0.85em;
+  opacity: 0.9;
+}
+
+/* HEADINGS */
 h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
@@ -40,24 +70,14 @@ h2 {
   padding-left: 10px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: #1a1a2e;
-  color: white;
-  display: inline-block;
-  padding: 8px 16px;
-  margin: 5px;
-  border-radius: 20px;
-  font-size: 0.9em;
-}
-
 h3 {
   color: #e94560;
   margin-bottom: 5px;
+}
+
+h4 {
+  color: #1a1a2e;
+  margin: 20px 0 8px;
 }
 
 a {
@@ -65,7 +85,33 @@ a {
   text-decoration: none;
 }
 
-/* PROJECTS & LEADERSHIP CARDS */
+.section-note {
+  color: #888;
+  font-size: 0.9em;
+  margin: -10px 0 20px;
+}
+
+/* SKILLS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #e94560;
+  color: white;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+ul.light li {
+  background: #1a1a2e;
+}
+
+/* CARDS (projects & leadership) */
 .project-card {
   background: white;
   border-left: 4px solid #e94560;
@@ -75,10 +121,20 @@ a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+.project-card.featured {
+  background: #1a1a2e;
+  color: white;
+}
+
+.project-card.featured .project-meta {
+  color: #ccc;
+}
+
 .project-meta {
   font-size: 0.85em;
   color: #888;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .project-card img {
@@ -109,4 +165,9 @@ a {
 #contact h2 {
   color: white;
   border-left-color: #e94560;
+  display: inline-block;
+}
+
+#contact p {
+  margin-bottom: 8px;
 }
